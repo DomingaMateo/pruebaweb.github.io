@@ -1,0 +1,446 @@
+/*importar tipografía*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+body {
+     font-family: "Poppins", sans-serif;
+     background-color: #2D343C;
+}
+
+
+/*conTEnedor general*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*encabezado*/
+header{
+    background-image: linear-gradient(
+    rgb(0,0,0,0.2),
+    rgb(0,0,0,0.2)), 
+    url(images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+}
+
+
+/*menu princial*/
+
+.menu {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*lOGO*/
+.logo{
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+/*ELEMENTOS DE LA NAVEGACION*/
+.menu .navbar ul li{
+
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+
+  font-size: 18px;
+  padding: 20px;
+  color: #FFFFFF;
+  display: block;
+  font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #f35200;
+
+}
+
+/* icono menu para Molvil*/
+
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.submenu{
+    position: relative;
+ 
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4e4b5076;
+    padding: 20px;
+    min-width: 400px;
+}
+
+
+/*tabla del carrito*/
+table {
+    width: 100%;
+}
+
+tr,td {
+    color: #FFFFFF;
+}
+
+
+/*boton para borrar, ULTIMO AVANCE*/
+
+.borrar {
+    background-color: #f35200;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    font-weight: 800;
+}
+
+
+
+.header-txt {
+padding: 0 200px;
+text-align: center;
+}
+
+.header-txt h1 {
+    font-size: 70px;
+    line-height: 80px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+
+.header-txt p{
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.btn-1{
+   display: inline-block;
+   background-color: #f35200; 
+   color: #FFFFFF;
+   padding: 13px 35px;
+   border-radius: 25px;
+   text-transform: capitalize;
+   font-size: 16px;
+}
+
+.btn-1:hover {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+
+/*seccion de los iconos*/
+.icons{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.icons img{
+    width: 30px;
+}
+
+
+/*seccion de los productos*/
+
+/*antes de escribir el codigo tienen que verificar si 
+esta bien el codigo*/
+
+.products{ 
+padding: 70px 0 0 0;
+text-align: center;
+}
+
+h2{
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-bottom: 35px;
+    text-align: center;
+    margin-top: 30px;  
+}
+
+.products-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+
+}
+
+.products img{ 
+    width: 250px;
+}
+
+.products h3{
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.products p{
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+
+}
+
+
+.Precio{
+color: #f35200 !important;
+
+}
+
+.btn-2{
+display: inline-block;
+padding: 8px 17px;
+border: 1px solid #f35200;
+border-radius: 20px;
+color: #FFFFFF;
+}
+
+.btn-2:hover{
+    background-color: #f35200;
+}
+
+/*DISEÑO DE LOS SERVICIOS*/
+
+/*REVISAR SIEMPRE EL CODIGO HTML*/
+
+/*las clases que van a colocar aca tiene que ser identico al que tenen en su html*/
+
+.servicios{
+    margin-top: 100px;
+    padding: 70px 0;
+    background-color: #ebeff1;
+    text-align: center;
+}
+
+.servicios h2{
+    color: #2D343C;
+}
+
+.services-content{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+}
+
+.service{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px rgb(0, 0, 0,0.2);
+    padding: 35px;
+    text-align: left;
+}
+
+.service h3{
+    font-size: 20px;
+    color: #2d343c;
+    margin-bottom: 10px;
+}
+
+hr{
+    width: 100px;
+    border: 2px solid #f35200;
+}
+
+.service p {
+    font-size: 16px;
+    color: #575757;
+    margin-top: 15px;
+}
+
+
+/* El codigo del footer lo cambie, ese codigo 
+se los voy a mandar*/
+
+
+.footer{
+
+    background-color: #24262b;
+    padding: 20px 0;
+
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-links h4{
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #f35200;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+    color: #f35200;
+    padding-left: 6px;
+}
+
+.social-link a{
+display: inline-block;
+min-height: 40px;
+width: 40px;
+background-color: rgba(255, 255, 255, 0.5);
+margin: 0 10px 10px 0;
+
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #FFFFFF;
+transition: all .5s ease;
+}
+
+.social-link a:hover{
+    background-color: #f35200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+    }   
+
+
+.menu label{
+    display: initial;
+}
+
+.menu .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #2d343c;
+    display: none;
+}
+
+.menu .navbar ul li{
+    width: 100%;
+}
+
+#menu:checked ~ .navbar {
+    display: initial;
+}
+
+.logo{
+    display: none;
+}
+
+
+.header{
+    min-height: 0vh;
+}
+
+.header-content{
+    padding: 100px 30px;
+}
+
+.header-txt{
+    padding: 0;
+}
+
+.products{
+    padding: 30px;
+}
+
+.products-content{
+    grid-template-columns: repeat(1, 1fr); 
+}
+
+.service{
+    padding: 30px;
+    margin: 0;
+}
+
+.services-content{
+    grid-template-columns: repeat(1,1fr); 
+}
+
+.footer{
+    flex-direction: column;
+    text-align: center;
+}
+}

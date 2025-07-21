@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web con carrito</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+
+<body>
+    <!--Encabezado de la pagina web-->
+
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">LOGO</a>
+            <input type="checkbox" id="menu"/>
+            <Label for="menu">
+                <img src="images/menu.png"  class="menu-icono" alt="">
+            </Label>
+
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="#">Inicio </a> </li>
+                     <li> <a href="#">Servicios </a> </li>
+                      <li> <a href="#">Productos </a> </li>
+                       <li> <a href="#">Contacto </a> </li>
+                </ul>
+            </nav>
+
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content conntainer">
+            <div class="header-txt">
+                <h1>Tu comida favorita</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laudantium quam eius sapiente accusantium esse doloremque 
+                    corrupti voluptatem iure illo molestias? Laboriosam asperiores 
+                    hic dolores unde reprehenderit eaque eius, maiores iure?</p>
+
+                    <a href="#" class="btn-1">Sección Menú</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!--Secciones de iconos-->
+    <section class="icons">
+        <div class="icon">
+            <img src="images/i1.svg" alt="">
+        </div>
+         <div class="icon">
+            <img src="images/i2.svg" alt="">
+        </div>
+         <div class="icon">
+            <img src="images/i3.svg" alt="">
+        </div>
+         <div class="icon">
+            <img src="images/i4.svg" alt="">
+        </div>
+ <div class="icon">
+            <img src="images/i5.svg" alt="">
+        </div>
+         <div class="icon">
+            <img src="images/i6.svg" alt="">
+        </div>
+         <div class="icon">
+            <img src="images/i7.svg" alt="">
+        </div>
+ <div class="icon">
+            <img src="images/i8.svg" alt="">
+        </div>
+ <div class="icon">
+            <img src="images/i9.svg" alt="">
+        </div>
+         <div class="icon">
+            <img src="images/i10.svg" alt="">
+        </div>
+    </section>
+
+       <!--Contenedor de los productos de pizza-->
+    <Section class="products containers" id="lista-1" >
+      <h2>Pizzas</h2>
+
+        <div class="products-content">
+          
+            <!--Primera imagen-->
+            <div class="products">
+                <img src="images/pi1.png" alt="">
+                <div class="product-txt">
+                    <h3>Pizza</h3>
+                    <p>Calidad Premium</p>
+                    <p class="Precio">Q140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+  <!--Segunda imagen-->
+             <div class="products">
+                <img src="images/pi2.png" alt="">
+                <div class="product-txt">
+                    <h3>Pizza</h3>
+                    <p>Calidad Premium</p>
+                    <p class="Precio">Q140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+             <!--Tercera imagen-->
+             <div class="products">
+                <img src="images/pi3.png" alt="">
+                <div class="product-txt">
+                    <h3>Pizza</h3>
+                    <p>Calidad Premium</p>
+                    <p class="Precio">Q140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <!--cuarta imagen-->
+             <div class="products">
+                <img src="images/pi4.png" alt="">
+                <div class="product-txt">
+                    <h3>Pizza</h3>
+                    <p>Calidad Premium</p>
+                    <p class="Precio">Q140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+        
+        <!--Segunda imagen-->
+             <div class="products">
+                <img src="images/pi5.png" alt="">
+                <div class="product-txt">
+                    <h3>Pizza</h3>
+                    <p>Calidad Premium</p>
+                    <p class="Precio">Q140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+ <!--Segunda imagen-->
+             <div class="products">
+                <img src="images/pi6.png" alt="">
+                <div class="product-txt">
+                    <h3>Pizza</h3>
+                    <p>Calidad Premium</p>
+                    <p class="Precio">Q140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+
+             <!--Segunda imagen-->
+             <div class="products">
+                <img src="images/pi7.png" alt="">
+                <div class="product-txt">
+                    <h3>Pizza</h3>
+                    <p>Calidad Premium</p>
+                    <p class="Precio">Q140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al carrito</a>
+                </div>
+                </div>
+               
+                <!--Segunda imagen-->
+             <div class="products">
+                <img src="images/pi8.png" alt="">
+                <div class="product-txt">
+                    <h3>Pizza</h3>
+                    <p>Calidad Premium</p>
+                    <p class="Precio">Q140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar al carrito</a>
+                </div>
+                </div>
+
+                   <!--Segunda imagen-->
+             <div class="products">
+                <img src="images/pi9.png" alt="">
+                <div class="product-txt">
+                    <h3>Pizza</h3>
+                    <p>Calidad Premium</p>
+                    <p class="Precio">Q140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="9">Agregar al carrito</a>
+                </div>
+                </div>
+
+             </div>     
+    
+    </Section>
+
+     <!--Contenedor de los productos de ensaladas-->
+    <Section class="Products containers" id="lista-2" >
+        <h2>Ensaladas</h2>
+        <div class="products-content">
+            <!--Primera imagen-->
+            <div class="products">
+                <img src="images/e1.png" alt="">
+                <div class="product-txt">
+                    <h3>Pizza</h3>
+                    <p>Calidad Premium</p>
+                    <p class="Precio">Q140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="10">Agregar al carrito</a>
+                </div>
+            </div>
+  <!--Segunda imagen-->
+             <div class="products">
+                <img src="images/e2.png" alt="">
+                <div class="product-txt">
+                    <h3>Pizza</h3>
+                    <p>Calidad Premium</p>
+                    <p class="Precio">Q140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="11">Agregar al carrito</a>
+                </div>
+            </div>
+             <!--Tercera imagen-->
+             <div class="products">
+                <img src="images/e3.png" alt="">
+                <div class="product-txt">
+                    <h3>Pizza</h3>
+                    <p>Calidad Premium</p>
+                    <p class="Precio">Q140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="12">Agregar al carrito</a>
+                </div>
+            </div>
+            <!--cuarta imagen-->
+             <div class="products">
+                <img src="images/e4.png" alt="">
+                <div class="product-txt">
+                    <h3>Pizza</h3>
+                    <p>Calidad Premium</p>
+                    <p class="Precio">Q140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="13">Agregar al carrito</a>
+                </div>
+            </div>
+    
+        <!--Segunda imagen-->
+             <div class="products">
+                <img src="images/e5.png" alt="">
+                <div class="product-txt">
+                    <h3>Pizza</h3>
+                    <p>Calidad Premium</p>
+                    <p class="Precio">Q140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="14">Agregar al carrito</a>
+                </div>
+            </div>
+    
+ <!--Segunda imagen-->
+             <div class="products">
+                <img src="images/e6.png" alt="">
+                <div class="product-txt">
+                    <h3>Pizza</h3>
+                    <p>Calidad Premium</p>
+                    <p class="Precio">Q140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="15">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+    <section class="servicios">
+        <h2>Servicios</h2>
+        <div class="services-content conntainer">
+            <div class="service">
+                <h3>Comida</h3>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Fugit illum odit iste adipisci blanditiis sit illo veniam eligendi tenetur? 
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Comida</h3>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Fugit illum odit iste adipisci blanditiis sit illo veniam eligendi tenetur? 
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Comida</h3>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Fugit illum odit iste adipisci blanditiis sit illo veniam eligendi tenetur? 
+                </p>
+            </div>
+            <div class="service">
+                <h3>Comida</h3>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Fugit illum odit iste adipisci blanditiis sit illo veniam eligendi tenetur? 
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Comida</h3>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Fugit illum odit iste adipisci blanditiis sit illo veniam eligendi tenetur? 
+                </p>
+            </div>
+        </div>
+    </section>
+
+<footer class="footer">
+    <div class="contenedor">
+        <div class="footer-row">
+
+        <div class="footer-links">
+            <h4>Compañia</h4>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                 <li><a href="#">Nuestros servicios</a></li>
+                  <li><a href="#">Politica de privacidad</a></li>
+                   <li><a href="#">Afiliate</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-links">
+            <h4>Compañia</h4>
+            <ul>
+                <li><a href="#">Preguntas</a></li>
+                 <li><a href="#">Compras</a></li>
+                  <li><a href="#">Envíos</a></li>
+                   <li><a href="#">Estatus de orden</a></li>
+                   <li><a href="#">Pago</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Síguenos</h4>
+           <div class="social-link">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+
+           </div>
+        </div>
+
+    </div>
+ </div>
+
+</footer>
+
+
+   
+  <script src="escrip.js"></script>
+
+</body>
+</html>
